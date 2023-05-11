@@ -8,8 +8,9 @@ declare const OpenCvConsumer: React.Consumer<{
     cv?: typeof import("mirada/dist/src/types/opencv/_types") | undefined;
 }>;
 export { OpenCvConsumer, OpenCvContext };
-export declare const OpenCvProvider: ({ openCvVersion, openCvPath, children, }: {
-    openCvVersion?: string | undefined;
-    openCvPath?: string | undefined;
+export interface IOpenCvProviderProps {
+    openCvVersion?: string;
+    openCvPath?: string;
     children: React.ReactNode;
-}) => React.JSX.Element;
+}
+export declare const OpenCvProvider: React.FC<IOpenCvProviderProps>;

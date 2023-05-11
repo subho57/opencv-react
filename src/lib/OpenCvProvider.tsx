@@ -15,15 +15,13 @@ const moduleConfig = {
   onRuntimeInitialized: () => {},
 };
 
-export const OpenCvProvider = ({
-  openCvVersion = '4.x',
-  openCvPath = '',
-  children,
-}: {
+export interface IOpenCvProviderProps {
   openCvVersion?: string;
   openCvPath?: string;
   children: React.ReactNode;
-}) => {
+}
+
+export const OpenCvProvider: React.FC<IOpenCvProviderProps> = ({ openCvVersion = '5.x', openCvPath = '', children }) => {
   const [cvInstance, setCvInstance] = React.useState<{ loaded: boolean; cv?: CV }>({
     loaded: false,
     cv: undefined,
