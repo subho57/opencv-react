@@ -1,3 +1,3 @@
 describe('ExampleComponent', () => {
-  it('is truthy', () => {})
-})
+  it('is truthy', () => {});
+});
