@@ -1,11 +1,11 @@
 import * as React from 'react';
 declare const OpenCvContext: React.Context<{
     loaded: boolean;
-    cv: undefined;
+    cv?: typeof import("mirada/dist/src/types/opencv/_types") | undefined;
 }>;
 declare const OpenCvConsumer: React.Consumer<{
     loaded: boolean;
-    cv: undefined;
+    cv?: typeof import("mirada/dist/src/types/opencv/_types") | undefined;
 }>;
 export { OpenCvConsumer, OpenCvContext };
 export declare const OpenCvProvider: ({ openCvVersion, openCvPath, children, }: {

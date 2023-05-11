@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+import type { CV } from 'mirada';
 import * as React from 'react';
 
-const OpenCvContext = React.createContext({ loaded: false, cv: undefined });
+const OpenCvContext = React.createContext<{ loaded: boolean; cv?: CV }>({ loaded: false, cv: undefined });
 
 const { Consumer: OpenCvConsumer, Provider } = OpenCvContext;
 
@@ -15,7 +16,7 @@ const moduleConfig = {
 };
 
 export const OpenCvProvider = ({
-  openCvVersion = '4.7.0',
+  openCvVersion = '4.x',
   openCvPath = '',
   children,
 }: {
@@ -23,7 +24,7 @@ export const OpenCvProvider = ({
   openCvPath?: string;
   children: React.ReactNode;
 }) => {
-  const [cvInstance, setCvInstance] = React.useState({
+  const [cvInstance, setCvInstance] = React.useState<{ loaded: boolean; cv?: CV }>({
     loaded: false,
     cv: undefined,
   });
