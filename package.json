@@ -72,5 +72,5 @@
   "dependencies": {
     "mirada": "^0.0.15"
   },
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@1.22.19"
 }

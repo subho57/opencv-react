@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { OpenCvProvider, useOpenCv } from 'opencv-react'
+import { OpenCvProvider, useOpenCv } from 'opencv-react-ts'
 
 function MyComponent() {
   const data = useOpenCv()
