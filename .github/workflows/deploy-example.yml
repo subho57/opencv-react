@@ -16,7 +16,7 @@ jobs:
           node-version: 18
       - run: yarn && yarn build
       - run: cd example && yarn && yarn build
-      - run: mkdir -p example/build/cdn && cp -r dist example/build
+      - run: mkdir -p example/build/cdn && cp -r dist/* example/build/cdn
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v3
         with:
@@ -24,3 +24,4 @@ jobs:
           build_dir: example/build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}

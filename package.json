@@ -4,7 +4,10 @@
   "description": "OpenCV react wrapper. Hooks first API.",
   "author": "subho57",
   "license": "MIT",
-  "repository": "subho57/opencv-react-ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/subho57/opencv-react-ts.git"
+  },
   "homepage": "https://subho57.github.io/opencv-react-ts",
   "sideEffects": false,
   "publishConfig": {
