@@ -7,6 +7,16 @@
   "repository": "subho57/opencv-react-ts",
   "homepage": "https://subho57.github.io/opencv-react-ts",
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "opencv",
+    "react",
+    "typescript",
+    "mirada",
+    "opencv.js"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.ts",
@@ -72,5 +82,5 @@
   "dependencies": {
     "mirada": "^0.0.15"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@3.5.1"
 }

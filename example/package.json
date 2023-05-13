@@ -10,7 +10,7 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
-    "opencv-react-ts": "portal:..",
+    "opencv-react-ts": "link:..",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts"
@@ -28,5 +28,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@1.22.19"
 }

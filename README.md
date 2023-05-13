@@ -1,8 +1,10 @@
-# opencv-react
+# opencv-react-ts
+
+Originally forked from [giacomocerquone/opencv-react](https://github.com/giacomocerquone/opencv-react)
 
 > Hooks-first minimal OpenCV wrapper for React.
 
-[![NPM](https://img.shields.io/npm/v/opencv-react.svg)](https://www.npmjs.com/package/opencv-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/opencv-react-ts.svg)](https://www.npmjs.com/package/opencv-react-ts) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 <div id="description" />
 
@@ -13,13 +15,13 @@ You have also access to a `loaded` state which is provided by the `OpenCvProvide
 ## Install
 
 ```bash
-npm i opencv-react
+npm i opencv-react-ts
 ```
 
 or
 
 ```bash
-yarn add opencv-react
+yarn add opencv-react-ts
 ```
 
 ## API
@@ -89,18 +91,12 @@ const App = () => {
 }
 ```
 
-_*Check also the example folder*_
-
-## Todo
-
-- tests
-- prop types
-- index.d.ts
+**Check also the example folder**
 
 ## Projects that uses this lib
 
-WIP
+- [react-document-crop](https://subho57.github.io/react-document-crop/)
 
 ## License
 
-MIT © [giacomocerquone](https://github.com/giacomocerquone)
+MIT © [subho57](https://github.com/subho57)
