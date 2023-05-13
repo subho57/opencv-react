@@ -3,6 +3,8 @@ name: OpenCV React example app deployment
 on:
   push:
     branches: [master]
+  workflow_dispatch:
+
 
 jobs:
   deploy:
