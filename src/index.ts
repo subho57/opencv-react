@@ -1,3 +1,4 @@
 export * from './lib/OpenCvProvider';
 export * from './lib/useOpenCv';
-export * from 'mirada/dist/src/types/_cv';
+// eslint-disable-next-line import/no-extraneous-dependencies
+export type { CV } from 'mirada';

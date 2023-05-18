@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import type { CV } from 'mirada';
-import * as React from 'react';
+import React from 'react';
 
 const OpenCvContext = React.createContext<{ loaded: boolean; cv?: CV }>({ loaded: false, cv: undefined });
 
