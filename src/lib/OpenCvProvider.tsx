@@ -28,8 +28,8 @@ export const OpenCvProvider: React.FC<IOpenCvProviderProps> = ({ openCvVersion =
   });
 
   React.useEffect(() => {
-    // @ts-ignore
     if (document.getElementById(scriptId) || window.cv) {
+      setCvInstance({ loaded: true, cv: window.cv });
       return;
     }
 
@@ -37,7 +37,6 @@ export const OpenCvProvider: React.FC<IOpenCvProviderProps> = ({ openCvVersion =
     // https://medium.com/code-divoire/integrating-opencv-js-with-an-angular-application-20ae11c7e217
     // https://stackoverflow.com/questions/56671436/cv-mat-is-not-a-constructor-opencv
     moduleConfig.onRuntimeInitialized = () => {
-      // @ts-ignore
       setCvInstance({ loaded: true, cv: window.cv });
     };
     // @ts-ignore
